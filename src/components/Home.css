@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.pimg1{
+    display: grid;
+    grid-template-rows: auto 2fr 1fr;
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../assets/Images/img4.avif');
+    opacity: 0.8;
+
+}
+
+
+.pimg1 .header{
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    align-items: center;
+    padding: 20px 40px 40px;
+
+}
+
+
+
+.pimg1 .header h2 {
+    font-family: var(--font-bungee);
+    font-size: 2rem;
+    background: linear-gradient(to right, #D1E8E2, #19747E, #A9D6E5, #E2E2E2);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+    color: transparent;
+    text-shadow: 1px 1px 2px #83b6bb; /* Black text shadow */
+}
+
+
+
+.pimg1 .header h2 span{
+    font-family: "Gruppo";
+    font-size: 3rem;
+    color: #19747E;
+    font-weight: 500;
+  }
+  
+
+.pimg1 .header nav, button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(  --font-titillium-web);
+    font-size: 1.5rem;
+    color: #90E0EF;
+    
+}
+
+.pimg1 .header nav, button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.pimg1 .header nav> *:hover{
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #194f58;
+    
+}
+.pimg1 .header nav > li{
+    list-style: none;
+}
+
+button{
+    justify-self: center;
+    align-self: center;
+
+}
+
+.pimg1 main{
+    height: 300px;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.pimg1 main h3{
+    text-align: center;
+    font-family: var( --font-rubik-doodle-shadow);
+    font-size: 3rem;
+    color: #E2E2E2;
+}
+
+
+.pimg1 footer .mystacks * img{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    padding-right:20px;
+}
+.pimg1 footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 0 50px;
+ 
+}
+.pimg1 footer .mystacks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+}
+
+
+.pimg1 .page{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: all 0.4s;
+    
+}
+
+
+
+.pimg1 .page a {
+    display: block; 
+
+}
+  
+.pimg1 .page img {
+    width: 100px;
+    height: 100px;
+    display: block;
+ 
+}
+
+.about {
+    background-color: #D1E8E2;
+}
+.about div:first-of-type{
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+.about h2{
+    text-align: center;
+    color: #E2E2E2;
+    font-size: 27px;
+    font-family: var( --font-russo-one);
+    padding:  10px 40px;
+    background-color: #19747E;
+}
+  
+.about > div:nth-of-type(2){
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+  .about > div:nth-of-type(2) p {
+    line-height: 1.7;
+    align-self: center;
+    font-family: var( --font-rajdhani);
+    font-weight: 500;
+    padding: 0 10px;
+  }
+
+  .about > div p span{
+    font-size: 1.5rem;
+    color: #19747E;
+  }
+  
+  .about > div figure {
+    margin: 0;
+    align-items: center;
+
+  }
+  
+  .about > div figure img {
+    width: 100%; 
+    max-height: 100%; 
+    object-fit: cover;
+    align-self: center;
+  }
+  
+  
+
+
+
+@media only screen and (max-width:1040px){
+    .pimg1 .header nav{
+        display: none;
+        opacity: 0;
+    }
+
+    .pimg1 main{
+        padding-left: 0px;
+       place-items: center;
+       height: auto;
+    }
+
+}
+
+@media only screen and (min-width:480px){
+    .pimg1 main h3{
+        width: 400px;
+       
+    }
+
+ 
+}
+
+
+@media only screen and (max-width:600px){
+    .pimg1 .header {
+        grid-auto-flow: column;
+    }
+    .pimg1 .page{
+        align-items: center;
+    
+    }
+ 
+    .pimg1 .page img {
+        width: 60px;
+        height: 60px;
+        display: block; 
+    }
+      
+
+    .bar{
+        justify-self: end;
+        background-color: aliceblue;
+        color: brown;
+      
+    }
+
+}
+
+@media only screen and  (max-width: 800px) {
+    .about > div:nth-of-type(2) {
+      grid-template-columns: 1fr; 
+      padding: 0 40px; 
+    }
+  }
