@@ -27,6 +27,7 @@ function App() {
         scrollToSelection={scrollToSelection}
       />
       <Porfolio portfolioRef={portfolioRef} />
+      
     </MyContext.Provider>
   );
 }
