@@ -3,6 +3,7 @@ import { createContext } from "react";
 import "./App.css";
 import Home from "./components/Home";
 import Porfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 const MyContext = createContext();
 
 const scrollToSelection = (elementRef) => {
@@ -17,7 +18,14 @@ function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const portfolioRef = useRef(null);
-  const contextValue = { scrollToSelection, homeRef, aboutRef, portfolioRef };
+  const contactRef = useRef(null);
+  const contextValue = {
+    scrollToSelection,
+    homeRef,
+    aboutRef,
+    portfolioRef,
+    contactRef,
+  };
   return (
     <MyContext.Provider value={contextValue}>
       <Home
@@ -27,7 +35,7 @@ function App() {
         scrollToSelection={scrollToSelection}
       />
       <Porfolio portfolioRef={portfolioRef} />
-      
+      <Contact contactRef={contactRef} />
     </MyContext.Provider>
   );
 }

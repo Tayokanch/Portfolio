@@ -16,7 +16,7 @@ import { useContext } from "react";
 import { MyContext } from "../App";
 
 function Home() {
-  const { scrollToSelection, homeRef, aboutRef, portfolioRef } =
+  const { scrollToSelection, homeRef, aboutRef, portfolioRef, contactRef } =
     useContext(MyContext);
 
   return (
@@ -29,8 +29,8 @@ function Home() {
           <nav>
             <li onClick={() => scrollToSelection(homeRef)}>Home</li>
             <li onClick={() => scrollToSelection(aboutRef)}>About</li>
-            <li onClick={() => scrollToSelection(portfolioRef)}>Porfolio</li>
-            <li>Contact</li>
+            <li onClick={() => scrollToSelection(portfolioRef)}>Projects</li>
+            <li onClick={() => scrollToSelection(contactRef)}>Contact</li>
             <button>
               <FaTimes />
             </button>
