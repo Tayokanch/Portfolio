@@ -45,7 +45,7 @@ function Home() {
             <li onClick={() => scrollToSelection(aboutRef)}>About</li>
             <li onClick={() => scrollToSelection(portfolioRef)}>Projects</li>
             <li onClick={() => scrollToSelection(contactRef)}>Contact</li>
-            <button onClick={handleNav}>
+            <button onClick={handleNav} className="close">
               <FaTimes />
             </button>
           </nav>

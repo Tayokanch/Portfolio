@@ -192,10 +192,17 @@ button{
     align-self: center;
   }
   
-  .pimg1 .header  button{
+.pimg1 .header  button{
     visibility: hidden;
     opacity: 0;
-  }
+}
+
+button.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+}
 
 
 
@@ -219,10 +226,7 @@ button{
         background-color:black;
         transition: 0.7s; 
         transform: translateX(100vh);
-
-
-
-
+    
     }
     .pimg1 .header nav.open{
         transform:none;
@@ -232,6 +236,8 @@ button{
     .pimg1 .header nav.undisplay{
         transform:none; 
     }
+
+
 
 
     .pimg1 main{
