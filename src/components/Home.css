@@ -229,6 +229,10 @@ button{
 
     }
 
+    .pimg1 .header nav.undisplay{
+        transform:none; 
+    }
+
 
     .pimg1 main{
         padding-left: 0px;

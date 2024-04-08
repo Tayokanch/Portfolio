@@ -16,8 +16,14 @@ import { useContext } from "react";
 import { MyContext } from "../App";
 
 function Home() {
-  const { scrollToSelection, homeRef, aboutRef, portfolioRef, contactRef } =
-    useContext(MyContext);
+  const {
+    scrollToSelection,
+    homeRef,
+    aboutRef,
+    portfolioRef,
+    contactRef,
+    unDisplayNav,
+  } = useContext(MyContext);
   const [openNav, setOpenNav] = useState(false);
   const handleNav = () => {
     setOpenNav(!openNav);
@@ -30,7 +36,11 @@ function Home() {
           <h2 class="border">
             Dev<span id="dev">Tayo</span>
           </h2>
-          <nav className={`${openNav ? "open" : ""}`}>
+          <nav
+            className={`${openNav ? "open" : ""} ${
+              unDisplayNav ? "undisplay" : ""
+            }`}
+          >
             <li onClick={() => scrollToSelection(homeRef)}>Home</li>
             <li onClick={() => scrollToSelection(aboutRef)}>About</li>
             <li onClick={() => scrollToSelection(portfolioRef)}>Projects</li>

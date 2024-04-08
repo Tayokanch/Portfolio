@@ -6,19 +6,24 @@ import Porfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 const MyContext = createContext();
 
-const scrollToSelection = (elementRef) => {
-  if (elementRef && elementRef.current) {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  }
-};
 function App() {
+  const [unDisplayNav, setunDisplayNav] = useState(false);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const portfolioRef = useRef(null);
   const contactRef = useRef(null);
+  const scrollToSelection = (elementRef) => {
+    if (elementRef && elementRef.current) {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+
+    setunDisplayNav(!unDisplayNav);
+    console.log(unDisplayNav)
+  };
+
   const contextValue = {
     scrollToSelection,
     homeRef,
@@ -26,6 +31,7 @@ function App() {
     portfolioRef,
     contactRef,
   };
+
   return (
     <MyContext.Provider value={contextValue}>
       <Home
@@ -33,6 +39,7 @@ function App() {
         aboutRef={aboutRef}
         portfolioRef={portfolioRef}
         scrollToSelection={scrollToSelection}
+        unDisplayNav={unDisplayNav}
       />
       <Porfolio portfolioRef={portfolioRef} />
       <Contact contactRef={contactRef} />
@@ -40,4 +47,4 @@ function App() {
   );
 }
 
-export { App, MyContext, scrollToSelection };
+export { App, MyContext };
