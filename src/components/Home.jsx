@@ -1,6 +1,6 @@
 import React from "react";
 import About from "./About";
-
+import { useState } from "react";
 import "./Home.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import js from "../assets/Images/js.png";
@@ -18,6 +18,10 @@ import { MyContext } from "../App";
 function Home() {
   const { scrollToSelection, homeRef, aboutRef, portfolioRef, contactRef } =
     useContext(MyContext);
+  const [openNav, setOpenNav] = useState(false);
+  const handleNav = () => {
+    setOpenNav(!openNav);
+  };
 
   return (
     <>
@@ -26,17 +30,17 @@ function Home() {
           <h2 class="border">
             Dev<span id="dev">Tayo</span>
           </h2>
-          <nav>
+          <nav className={`${openNav ? "open" : ""}`}>
             <li onClick={() => scrollToSelection(homeRef)}>Home</li>
             <li onClick={() => scrollToSelection(aboutRef)}>About</li>
             <li onClick={() => scrollToSelection(portfolioRef)}>Projects</li>
             <li onClick={() => scrollToSelection(contactRef)}>Contact</li>
-            <button>
+            <button onClick={handleNav}>
               <FaTimes />
             </button>
           </nav>
-          <button>
-            <FaBars className="bar" />
+          <button className={`bar`} onClick={handleNav}>
+            <FaBars />
           </button>
         </div>
         <main>

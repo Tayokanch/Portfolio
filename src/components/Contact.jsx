@@ -42,11 +42,15 @@ function Contact() {
                 </div>
 
                 <div className="phone">
-                  <input type="phone" placeholder="Phone" />
+                  <input type="phone" placeholder="Phone (optional)" />
                 </div>
               </section>
               <section className="textarea">
-                <textarea name="textarea" id="" placeholder="Type your message..."></textarea>
+                <textarea
+                  name="textarea"
+                  id=""
+                  placeholder="Type your message..."
+                ></textarea>
               </section>
             </section>
             <button id="submit">SEND MESSAGE</button>
