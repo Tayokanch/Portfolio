@@ -217,7 +217,7 @@ button{
         gap: 1.5rem;
         background-color: var(--mainColor);
         background-color:black;
-        transition: 1s; 
+        transition: 0.7s; 
         transform: translateX(100vh);
 
 
