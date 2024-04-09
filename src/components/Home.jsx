@@ -101,8 +101,6 @@ function Home() {
           </div>
         </footer>
       </figure>
-
-      <About />
     </>
   );
 }

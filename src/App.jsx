@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Porfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import HomeAbout from "./components/HomeAbout";
 const MyContext = createContext();
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     }
 
     setunDisplayNav(!unDisplayNav);
-    console.log(unDisplayNav)
+    console.log(unDisplayNav);
   };
 
   const contextValue = {
@@ -34,15 +35,10 @@ function App() {
 
   return (
     <MyContext.Provider value={contextValue}>
-      <Home
-        homeRef={homeRef}
-        aboutRef={aboutRef}
-        portfolioRef={portfolioRef}
-        scrollToSelection={scrollToSelection}
-        unDisplayNav={unDisplayNav}
-      />
+      <HomeAbout />
       <Porfolio portfolioRef={portfolioRef} />
       <Contact contactRef={contactRef} />
+      <Home />
     </MyContext.Provider>
   );
 }

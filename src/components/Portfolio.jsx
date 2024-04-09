@@ -60,7 +60,7 @@ function Porfolio() {
         </div>
       </section>
 
-      <section className="portfolio" ref={portfolioRef}>
+      <section className="portfolio">
         <h5>Project 2</h5>
         <div className="project_container">
           <figure>
@@ -69,13 +69,16 @@ function Porfolio() {
           <div>
             <h4>Train Ticket Selling App</h4>
             <p>
-              This is a full stack web application designed for easy ticket
-              bookings to various attractions in Lagos, Nigeria. It features
-              three main categories: Art and Gallery, Recreational Centre, and
-              Beach. Users can register, filter locations by categories, explore
-              each spot, book multiple tickets, view valid and expired tickets,
-              write reviews, while tour guides and admins have specialized
-              logins for scheduling and management.
+              The proposed web application facilitates the resale of valid train
+              tickets across the UK, providing a platform for sellers to post
+              their tickets for sale. Buyers can access a comprehensive list of
+              available tickets and filter them based on their preferred
+              location. Additionally, buyers can chat with the sellers to
+              inquire about ticket details or initiate the purchase process.
+              This platform serves as a convenient solution for individuals
+              looking to resell their train tickets before their expiration,
+              thereby avoiding potential loss without the option for refunds
+              from the original purchase.
             </p>
 
             <div className="project_link">
