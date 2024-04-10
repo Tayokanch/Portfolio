@@ -54,7 +54,7 @@ function Home() {
           </button>
         </div>
         <main>
-          <h3>I turned users stories into tailored software solutions</h3>
+          <h3>I turn users stories into tailored software solutions</h3>
         </main>
 
         <footer>
