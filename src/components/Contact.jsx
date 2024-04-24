@@ -5,6 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import { MyContext } from "../App";
+import ScrollUp from "./ScrollUp";
 import "./Contact.css";
 function Contact() {
   const { contactRef } = useContext(MyContext);
@@ -56,6 +57,7 @@ function Contact() {
             <button id="submit">SEND MESSAGE</button>
           </form>
         </div>
+        <ScrollUp />
       </section>
     </>
   );

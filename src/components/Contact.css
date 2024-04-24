@@ -11,6 +11,8 @@
 section.contact_container{
     display: grid;
     background-color: #D1E8E2;
+    position: relative;
+
 }
 .contact_header{
     justify-self: center;
@@ -75,6 +77,9 @@ textarea {
 }
 #submit:hover{
     background-color: #4d98a0;
+    background-color:#D1E8E2 ;
+    border:  4px solid  #4d98a0;
+    color: #4d98a0;
     cursor: pointer;
 
 }

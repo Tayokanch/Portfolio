@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Porfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import HomeAbout from "./components/HomeAbout";
+import ScrollUp from "./components/ScrollUp.jsx";
 const MyContext = createContext();
 
 function App() {
@@ -38,7 +39,6 @@ function App() {
       <HomeAbout />
       <Porfolio portfolioRef={portfolioRef} />
       <Contact contactRef={contactRef} />
-      <Home />
     </MyContext.Provider>
   );
 }

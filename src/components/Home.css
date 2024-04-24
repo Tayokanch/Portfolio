@@ -124,7 +124,13 @@ button{
     flex-direction: row;
     cursor: pointer;
     transition: all 0.4s;
+
     
+}
+
+.linkedin:hover, .github:hover {
+    color: #e2e2e290; 
+    transform: scale(1.1); 
 }
 
 
