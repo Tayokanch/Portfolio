@@ -54,6 +54,9 @@ function Home() {
           </button>
         </div>
         <main>
+          <p className="my_name">
+            Hi, I'm <span>Omotayo</span>
+          </p>
           <h3>I turn users stories into tailored software solutions</h3>
         </main>
 
