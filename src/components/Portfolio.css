@@ -29,7 +29,6 @@
 }
 
 section.portfolio{
-    max-height: 900px;
     display: grid;
     background-color: #839ea7;
 }
@@ -68,7 +67,33 @@ section.portfolio{
     line-height: 2;
     padding-bottom: 30px;
 }
+.technologies {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 40px;
 
+}
+.technologies > p{
+    font-size: 2rem;
+    color: #E2E2E2;
+    font-family: "Gruppo", sans-serif;
+    text-align: center;
+}
+
+.technologies > div {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.technologies > div > p{
+    box-shadow: 0 0 3px 1px#19747E;
+    font-family: "Gruppo", sans-serif;
+    text-align: center;
+    padding: 10px;
+
+}
 .project_link{
     display: grid;
     place-items: center;
@@ -81,7 +106,7 @@ section.portfolio{
     height: 40px;
     color: #E2E2E2;
     padding: 10px;
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px 2px  rgb(198, 193, 193);
 
 }
 

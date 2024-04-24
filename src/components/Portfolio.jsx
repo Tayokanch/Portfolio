@@ -34,6 +34,15 @@ function Porfolio() {
               write reviews, while tour guides and admins have specialized
               logins for scheduling and management.
             </p>
+            <div className="technologies">
+              <p>Tech used:</p>
+              <div>
+                <p>React</p>
+                <p>Express</p>
+                <p>PostgreSQL</p>
+                <p>Prisma</p>
+              </div>
+            </div>
 
             <div className="project_link">
               <div className="github">
@@ -80,6 +89,12 @@ function Porfolio() {
               thereby avoiding potential loss without the option for refunds
               from the original purchase.
             </p>
+            <div className="technologies">
+              <p>Tech used:</p>
+              <div>
+                <p>React</p>
+              </div>
+            </div>
 
             <div className="project_link">
               <div className="github">
