@@ -1,0 +1,13 @@
+.alert {
+    transition: opacity 0.3s ease, transform 0.7s ease;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%, -20%);
+    opacity: 0;
+}
+
+.showAlert {
+    opacity: 1; 
+    left: 50%;
+
+}
