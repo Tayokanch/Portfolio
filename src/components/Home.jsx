@@ -33,7 +33,7 @@ function Home() {
     <>
       <figure class="pimg1" ref={homeRef}>
         <div class="header">
-          <h2 class="border">
+          <h2>
             Dev<span id="dev">Tayo</span>
           </h2>
           <nav
