@@ -27,16 +27,14 @@ function Porfolio() {
           <div>
             <h4>Train Ticket Selling App</h4>
             <p>
-              The proposed web application facilitates the resale of valid train
-              tickets across the UK, providing a platform for sellers to post
-              their tickets for sale. Buyers can access a comprehensive list of
-              available tickets and filter them based on their preferred
-              location. Additionally, buyers can chat with the sellers to
-              inquire about ticket details or initiate the purchase process.
-              This platform serves as a convenient solution for individuals
-              looking to resell their train tickets before their expiration,
-              thereby avoiding potential loss without the option for refunds
-              from the original purchase.
+              The web application facilitates the resale of valid train tickets
+              across the UK, helping users avoid losses from non-refundable
+              train tickets. Sellers can post tickets with details, while buyers
+              can browse and filter listings by location. A live chat feature
+              allows real-time communication between buyers and sellers for
+              inquiries and negotiations. Users can create accounts, and manage
+              listings with CRUD functionalities. This app aims to provide a
+              reliable and user-friendly platform for reselling train tickets.
             </p>
             <div className="technologies">
               <p>Tech used:</p>
