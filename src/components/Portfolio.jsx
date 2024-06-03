@@ -42,6 +42,9 @@ function Porfolio() {
               <p>Tech used:</p>
               <div>
                 <p>React</p>
+                <p>Express</p>
+                <p>MongoDB</p>
+                <p>Prisma</p>
               </div>
             </div>
 
