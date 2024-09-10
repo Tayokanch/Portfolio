@@ -41,6 +41,7 @@ function Porfolio() {
               <div>
                 <p>React</p>
                 <p>Express</p>
+                <p>TypeScript</p>
                 <p>MongoDB</p>
                 <p>Tailwind</p>
               </div>
@@ -74,7 +75,10 @@ function Porfolio() {
                 thickness="5px"
                 className="hover: cursor-pointer"
               >
-                <CircularProgressLabel style={{ fontSize: "10px" }} className="text-[10px] ">
+                <CircularProgressLabel
+                  style={{ fontSize: "10px" }}
+                  className="text-[10px] "
+                >
                   In progress
                 </CircularProgressLabel>
               </CircularProgress>
