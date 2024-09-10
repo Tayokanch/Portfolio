@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Portfolio.css";
 import explorelag from "../assets/Images/explorelag.png";
 import trainapp from "../assets/Images/trainapp.png";
+import vogue from "../assets/Images/vogue.jpeg";
+import { CircularProgress, CircularProgressLabel } from "@chakra-ui/progress";
 
 function Porfolio() {
   const { portfolioRef } = useContext(MyContext);
@@ -17,9 +19,71 @@ function Porfolio() {
           <span class="border">My Project</span>
         </div>
       </figure>
-
       <section className="portfolio">
         <h5>Project 1</h5>
+        <div className="project_container">
+          <figure>
+            <img src={vogue} alt="" className="max-h-[300px]" />
+          </figure>
+          <div>
+            <h4>VogueNest</h4>
+            <p>
+              VogueNest is a modern e-commerce platform for fashion, featuring
+              secure authentication authorization, an admin panel for managing
+              daily sales and order statuses, and standard CRUD operations.
+              Users can sign up, log in, search for products, filter products,
+              add or update items in their cart, and make payments via Stripe.
+              Admins have exclusive access to sales data and order management
+              tools.
+            </p>
+            <div className="technologies">
+              <p>Tech used:</p>
+              <div>
+                <p>React</p>
+                <p>Express</p>
+                <p>MongoDB</p>
+                <p>Tailwind</p>
+              </div>
+            </div>
+
+            <div className="project_link">
+              <div className="github box">
+                <a
+                  href="https://github.com/Tayokanch/VogueNest-client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
+
+              {/* <div className="live">
+                <a
+                  href="https://cheapticket.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGlobe} />
+                </a>
+              </div> */}
+
+              <CircularProgress
+                size="80px"
+                value={70}
+                color="#19747E"
+                thickness="5px"
+                className="hover: cursor-pointer"
+              >
+                <CircularProgressLabel style={{ fontSize: "10px" }} className="text-[10px] ">
+                  In progress
+                </CircularProgressLabel>
+              </CircularProgress>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="portfolio">
+        <h5>Project 2</h5>
         <div className="project_container">
           <figure>
             <img src={trainapp} alt="" />
@@ -47,7 +111,7 @@ function Porfolio() {
             </div>
 
             <div className="project_link">
-              <div className="github">
+              <div className="github box">
                 <a
                   href="https://github.com/Tayokanch/Ticket-Traders"
                   target="_blank"
@@ -57,7 +121,7 @@ function Porfolio() {
                 </a>
               </div>
 
-              <div className="live">
+              <div className="live box">
                 <a
                   href="https://cheapticket.netlify.app/"
                   target="_blank"
@@ -71,7 +135,7 @@ function Porfolio() {
         </div>
       </section>
       <section className="portfolio" ref={portfolioRef}>
-        <h5>Project 2</h5>
+        <h5>Project 3</h5>
         <div className="project_container">
           <figure>
             <img src={explorelag} alt="" />
@@ -98,7 +162,7 @@ function Porfolio() {
             </div>
 
             <div className="project_link">
-              <div className="github">
+              <div className="github box">
                 <a
                   href="https://github.com/Tayokanch/ExploreLagos"
                   target="_blank"
@@ -108,7 +172,7 @@ function Porfolio() {
                 </a>
               </div>
 
-              <div className="live">
+              <div className="live box">
                 <a
                   href="https://explorelagos.netlify.app/"
                   target="_blank"

@@ -43,7 +43,7 @@ section.portfolio{
 .project_container{
     display: grid;
     grid-auto-flow: column;
-    column-gap: 5px;
+    column-gap: 15px;
     padding: 30px 30px;
 }
 
@@ -102,7 +102,7 @@ section.portfolio{
     grid-auto-flow: column;
 }
 
-.project_link div svg {
+.project_link .box svg {
     width: 40px;
     height: 40px;
     color: #E2E2E2;
@@ -111,7 +111,7 @@ section.portfolio{
 
 }
 
-.project_link div svg:hover {
+.project_link .box svg:hover {
     color: #e2e2e290;
     scale: 1.1;
     transition: all 0.2s;
