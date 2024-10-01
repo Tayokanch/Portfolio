@@ -44,6 +44,8 @@ function Porfolio() {
                 <p>React</p>
                 <p>Express</p>
                 <p>MongoDB</p>
+                <p>Stripe</p>
+                <p>Tailwind</p>
               </div>
             </div>
 
