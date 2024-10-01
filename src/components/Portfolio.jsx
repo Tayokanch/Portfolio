@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Portfolio.css";
 import explorelag from "../assets/Images/explorelag.png";
 import trainapp from "../assets/Images/trainapp.png";
-import vogue from "../assets/Images/vogue.jpeg";
+import vogue from "../assets/Images/vogue.png";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/progress";
 
 function Porfolio() {
@@ -19,11 +19,12 @@ function Porfolio() {
           <span class="border">My Project</span>
         </div>
       </figure>
+
       <section className="portfolio">
         <h5>Project 1</h5>
         <div className="project_container">
           <figure>
-            <img src={vogue} alt="" className="max-h-[300px]" />
+            <img src={vogue} alt="" />
           </figure>
           <div>
             <h4>VogueNest</h4>
@@ -39,11 +40,10 @@ function Porfolio() {
             <div className="technologies">
               <p>Tech used:</p>
               <div>
+                <p>TypeScript</p>
                 <p>React</p>
                 <p>Express</p>
-                <p>TypeScript</p>
                 <p>MongoDB</p>
-                <p>Tailwind</p>
               </div>
             </div>
 
@@ -58,30 +58,15 @@ function Porfolio() {
                 </a>
               </div>
 
-              {/* <div className="live">
+              <div className="live box">
                 <a
-                  href="https://cheapticket.netlify.app/"
+                  href="https://voguenesst.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faGlobe} />
                 </a>
-              </div> */}
-
-              <CircularProgress
-                size="80px"
-                value={70}
-                color="#19747E"
-                thickness="5px"
-                className="hover: cursor-pointer"
-              >
-                <CircularProgressLabel
-                  style={{ fontSize: "10px" }}
-                  className="text-[10px] "
-                >
-                  In progress
-                </CircularProgressLabel>
-              </CircularProgress>
+              </div>
             </div>
           </div>
         </div>
