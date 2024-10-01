@@ -40,6 +40,12 @@ section.portfolio{
     font-size: 2rem;
     text-align: center;
 }
+
+.portfolio  figure{
+    box-shadow: .50em .75em 1em;
+   background-color: #19747E;
+    padding: 1.5rem;
+}
 .project_container{
     display: grid;
     grid-auto-flow: column;
