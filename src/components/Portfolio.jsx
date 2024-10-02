@@ -9,6 +9,7 @@ import explorelag from "../assets/Images/explorelag.png";
 import trainapp from "../assets/Images/trainapp.png";
 import vogue from "../assets/Images/vogue.png";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/progress";
+import { SiDocker } from "react-icons/si"; 
 
 function Porfolio() {
   const { portfolioRef } = useContext(MyContext);
@@ -67,6 +68,16 @@ function Porfolio() {
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faGlobe} />
+                </a>
+              </div>
+
+              <div className="live box">
+                <a
+                  href="https://hub.docker.com/repository/docker/tayokanch/voguenestserver/tags"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                   <SiDocker style={{ width: '62px', height: '62px' }} />
                 </a>
               </div>
             </div>
