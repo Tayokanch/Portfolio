@@ -13,21 +13,15 @@ function About() {
       </div>
       <div>
         <p>
-          A <span>Junior Software Developer</span> with comprehensive experience
-          from Boolean UK's full-time software development boot camp, I'm
-          passionate about using programming languages to create impactful
-          solutions for real-world challenges and make a significant impact in
-          the tech space at large. During my time at Boolean UK, I completed a
-          6-month full-stack development program, gaining hands-on experience in
-          translating user stories into high-quality software solutions and
-          collaborating on diverse projects, including codebase enhancements.
-          Proficient in agile methodologies like Kanban, I actively engage in
-          daily stand-ups and retrospectives for efficient project management.
-          I've also mastered version control, including branching, merge
-          conflict resolution, and pull requests. Eager to contribute to
-          innovative projects and collaborate with like-minded professionals,
-          I'm excited about joining dynamic teams where creativity and
-          technology intersect to drive meaningful change.
+          A <span>Full-Stack Engineer</span> specializing in modern software
+          applications. I architect scalable frontends using React with
+          TypeScript and JavaScript, and develop robust backends with Express
+          and Node.js, while expanding my expertise in Java for enterprise
+          solutions. My cloud engineering capabilities include designing secure,
+          scalable, and cost optimized architectures on AWS. I have production
+          experience with EC2, S3, Lambda, RDS, DynamoDB, VPC, and
+          CloudFormation, implementing solutions aligned with AWS
+          Well-Architected and Cloud Adoption Framework best practices.
         </p>
 
         <figure>

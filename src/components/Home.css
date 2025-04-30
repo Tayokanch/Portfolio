@@ -3,8 +3,8 @@
     margin: 0;
 }
 .pimg1{
-    display: grid;
-    grid-template-rows: auto 2fr 1fr;
+    display: flex;
+    flex-direction: column;
     min-height: 100%;
     position: relative;
     background-position: center;
@@ -80,11 +80,18 @@ button{
     align-self: center;
 
 }
-
+.pimg1 >section{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
 .pimg1 main{
-    display: grid;
-    align-content: center;
-    padding-left: 200px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center; 
+    place-content: center;
 }
 .pimg1 .my_name{
     color: #D1E8E2;
@@ -106,7 +113,7 @@ button{
 }
 .pimg1 main h3{
     font-family: var( --font-rubik-doodle-shadow);
-    font-size: 3rem;
+   
     color: #E2E2E2;
 }
 
@@ -154,12 +161,7 @@ button{
 
 }
   
-.pimg1 .page img {
-    width: 100px;
-    height: 100px;
-    display: block;
- 
-}
+
 
 .about {
     background-color: #D1E8E2;
@@ -268,13 +270,13 @@ button.close{
 
 }
 
-@media only screen and (min-width:480px){
+/* @media only screen and (min-width:480px){
     .pimg1 main h3{
         width: 400px;
     }
 
  
-}
+} */
 
 
 @media only screen and (max-width:600px){
@@ -310,7 +312,6 @@ button.close{
 
     .pimg1 main{
         place-content: center;
-        text-align: center;
     }
 
   }

@@ -14,6 +14,8 @@ import postgresql from "../assets/Images/postgresql.png";
 import expressjs from "../assets/Images/expressjs.ico";
 import { useContext } from "react";
 import { MyContext } from "../App";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
   const {
@@ -53,53 +55,93 @@ function Home() {
             <FaBars />
           </button>
         </div>
-        <main>
-          <p className="my_name">
-            Hi, I'm <span>Omotayo</span>
-          </p>
-          <h3>I turn users stories into tailored software solutions</h3>
-        </main>
+        <section>
+          <main>
+            <p className="my_name pb-4">
+              👋 Hi, I'm <span>Omotayo.</span>
+            </p>
+            <ul className="text-amber-50 flex flex-col gap-4">
+              <p className="text-3xl lg:text-4xl py-3">
+                I build fast, resilient software apps with:
+              </p>
+              <li className="text-xl">
+                <span className="text-teal-700 font-bold text-3xl">
+                  Frontend:{" "}
+                </span>
+                React, JavaScript, and TypeScript
+              </li>
+              <li className="text-xl">
+                {" "}
+                <span className="text-teal-700 font-bold text-3xl">
+                  Backend:{" "}
+                </span>{" "}
+                Java, Express, Node.js
+              </li>
+              <li className="text-xl">
+                {" "}
+                <span className="text-teal-700 font-bold text-3xl">
+                  Cloud:{" "}
+                </span>{" "}
+                AWS (Lambda, S3, EC2)
+              </li>
+            </ul>
+          </main>
+        </section>
 
         <footer>
-          <div className="mystacks">
-            <div>
-              <img src={js} alt="" />
-            </div>
-            <div>
-              <img src={html} alt="" />
-            </div>
-            <div>
-              <img src={css} alt="" />
-            </div>
+          <div>
+            <p className="text-2xl text-white">STACKS</p>
+            <div className="mystacks">
+              <div>
+                <img src={js} alt="" />
+              </div>
+              <div>
+                <img src={html} alt="" />
+              </div>
+              <div>
+                <img src={css} alt="" />
+              </div>
 
-            <div>
-              <img src={react} alt="" />
-            </div>
-            <div>
-              <img src={expressjs} alt="" />
-            </div>
-            <div>
-              <img src={postgresql} alt="" />
+              <div>
+                <img src={react} alt="" />
+              </div>
+              <div>
+                <img src={expressjs} alt="" />
+              </div>
+              <div>
+                <img src={postgresql} alt="" />
+              </div>
             </div>
           </div>
-          <div className="page">
-            <div className="linkedin">
-              <a
-                href="https://www.linkedin.com/in/kazeem-omotayo-quadri-b240291a3/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={linkedin} alt="LinkedIn" />
-              </a>
-            </div>
-            <div className="github">
-              <a
-                href="https://github.com/Tayokanch"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={github} alt="GitHub" />
-              </a>
+
+          <div className="">
+            <p className="text-2xl text-white pb-1">PROFILE</p>
+            <div className="page flex flex-col justify-evenly">
+              <div className="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/kazeem-omotayo-quadri-b240291a3/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="size-6"
+                    style={{ color: "#0A66C2" }}
+                  />
+                </a>
+              </div>
+              <div className="github">
+                <a
+                  href="https://github.com/Tayokanch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="size-6 text-white"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </footer>
