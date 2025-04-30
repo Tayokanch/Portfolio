@@ -80,6 +80,13 @@ function Home() {
               <li className="text-xl">
                 {" "}
                 <span className="text-teal-700 font-bold text-3xl">
+                  Database:{" "}
+                </span>{" "}
+                PostgreSQL, MongoDB
+              </li>
+              <li className="text-xl">
+                {" "}
+                <span className="text-teal-700 font-bold text-3xl">
                   Cloud:{" "}
                 </span>{" "}
                 AWS (Lambda, S3, EC2)
