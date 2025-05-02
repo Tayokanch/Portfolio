@@ -7,9 +7,7 @@ import js from "../assets/Images/js.png";
 import html from "../assets/Images/html.png";
 import css from "../assets/Images/css.png";
 import react from "../assets/Images/react.png";
-import nodejs from "../assets/Images/nodejs.png";
-import linkedin from "../assets/Images/linkedin.png";
-import github from "../assets/Images/github.png";
+import java from "../assets/Images/java.png"
 import postgresql from "../assets/Images/postgresql.png";
 import expressjs from "../assets/Images/expressjs.ico";
 import { useContext } from "react";
@@ -99,6 +97,9 @@ function Home() {
           <div>
             <p className="text-2xl text-white">STACKS</p>
             <div className="mystacks">
+            <div>
+                <img src={java} alt="" />
+              </div>
               <div>
                 <img src={js} alt="" />
               </div>
