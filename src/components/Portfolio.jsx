@@ -1,15 +1,16 @@
-import React from "react";
-import { MyContext } from "../App";
-import { useContext } from "react";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Portfolio.css";
-import explorelag from "../assets/Images/explorelag.png";
-import trainapp from "../assets/Images/trainapp.png";
-import vogue from "../assets/Images/vogue.png";
-import { CircularProgress, CircularProgressLabel } from "@chakra-ui/progress";
-import { SiDocker } from "react-icons/si"; 
+import React from 'react';
+import { MyContext } from '../App';
+import { useContext } from 'react';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Portfolio.css';
+import explorelag from '../assets/Images/explorelag.png';
+import trainapp from '../assets/Images/trainapp.png';
+import vogue from '../assets/Images/vogue.png';
+import fiature from '../assets/Images/FiatureImage.png';
+import { CircularProgress, CircularProgressLabel } from '@chakra-ui/progress';
+import { SiDocker } from 'react-icons/si';
 
 function Porfolio() {
   const { portfolioRef } = useContext(MyContext);
@@ -21,6 +22,63 @@ function Porfolio() {
         </div>
       </figure>
 
+      <section className="portfolio">
+        <h5>Project 1</h5>
+        <div className="project_container">
+          <figure>
+            <img src={fiature} alt="" />
+          </figure>
+          <div>
+            <h4>Fiature Crypto Dashbosrd</h4>
+            <p>
+              This project is a comprehensive financial dashboard built to
+              monitor and visualize key business metrics in real time. It is
+              designed for executives and finance teams who need clear,
+              actionable insights into daily financial operations.
+            </p>
+            <div className="technologies">
+              <p>Tech used:</p>
+              <div>
+                <p>JavaScript</p>
+                <p>React</p>
+                <p>Tailwind</p>
+              </div>
+            </div>
+
+            <div className="project_link">
+              <div className="github box">
+                <a
+                  href="https://github.com/Tayokanch/Revenue-Dashboard/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
+
+              <div className="live box">
+                <a
+                  href="https://cryptorevenuedashb.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGlobe} />
+                </a>
+              </div>
+
+              <div className="live box">
+                <a
+                  href="https://hub.docker.com/repository/docker/tayokanch/voguenestserver/tags"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiDocker style={{ width: '62px', height: '62px' }} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="portfolio">
         <h5>Project 1</h5>
         <div className="project_container">
@@ -77,7 +135,7 @@ function Porfolio() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                   <SiDocker style={{ width: '62px', height: '62px' }} />
+                  <SiDocker style={{ width: '62px', height: '62px' }} />
                 </a>
               </div>
             </div>
